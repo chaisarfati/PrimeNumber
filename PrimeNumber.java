@@ -12,8 +12,7 @@ public class PrimeNumber {
 		Scanner input = new Scanner(System.in);		
 		ArrayList<Integer> divisor = new ArrayList<>();
 		
-		
-		System.out.println("Enter a number");
+		System.out.println("Enter a number:");
 		number = input.nextInt();
 		
 		for (int i = 2; i < Math.sqrt(number); i++) {
@@ -25,9 +24,9 @@ public class PrimeNumber {
 		}
 		
 		if (divisor.size()== 0){
-			System.out.println("It's a prime number");
+			System.out.println("It's a prime number!");
 		} else {
-			System.out.println("It's not a prime number");
+			System.err.println("It's not a prime number!");
 		}
 	
 	}
